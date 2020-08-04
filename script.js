@@ -24,7 +24,7 @@ function earnings() {
       let yearlyGrossMinusTax = gross-totalTax;
       let takeHomeMonthly = (gross-totalTax)/12;
       document.getElementById("result").innerHTML = 
-        "Your gross pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
+        "Your gross annual pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
         +"<br>Your take home pay for the year is <strong>£" +thous(yearlyGrossMinusTax.toFixed(2))+ "</strong>, which works out at <strong>£" +thous(takeHomeMonthly.toFixed(2))+ "</strong> per month. "
         +"<br>This means that over the year you will pay <strong>£"+thous(totalIT)+"</strong> in income tax, and <strong>£" +thous(totalNI) +"</strong> in National Insurance.";}
     else {
@@ -34,7 +34,7 @@ function earnings() {
         let yearlyGrossMinusTax = gross-totalTax;
         let takeHomeMonthly = (gross-totalTax)/12;
         document.getElementById("result").innerHTML = 
-          "Your gross pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
+          "Your gross annual pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
           +"<br>Your take home pay for the year is <strong>£" +thous(yearlyGrossMinusTax.toFixed(2))+ "</strong>, which works out at <strong>£" +thous(takeHomeMonthly.toFixed(2))+ "</strong> per month. "
           +"<br>This means that over the year you will pay <strong>£"+thous(totalIT)+"</strong> in income tax, and <strong>£" +thous(totalNI) +"</strong> in National Insurance.";}
 }
@@ -47,7 +47,7 @@ function earnings() {
       let takeHomeMonthly = (gross-totalTax)/12;
 
     document.getElementById("result").innerHTML = 
-    "Your gross pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
+    "Your gross annual pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
           +"<br>Your take home pay for the year is <strong>£" +thous(yearlyGrossMinusTax.toFixed(2))+ "</strong>, which works out at <strong>£" +thous(takeHomeMonthly.toFixed(2))+ "</strong> per month. "
           +"<br>This means that over the year you will pay <strong>£"+thous(totalIT)+"</strong> in income tax, and <strong>£" +thous(totalNI) +"</strong> in National Insurance.";}
   
@@ -67,7 +67,7 @@ function earnings() {
 
 
     document.getElementById("result").innerHTML = 
-    "Your gross pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
+    "Your gross annual pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
           +"<br>Your take home pay for the year is <strong>£" +thous(yearlyGrossMinusTax.toFixed(2))+ "</strong>, which works out at <strong>£" +thous(takeHomeMonthly.toFixed(2))+ "</strong> per month. "
           +"<br>This means that over the year you will pay <strong>£"+thous(totalIT)+"</strong> in income tax, and <strong>£" +thous(totalNI) +"</strong> in National Insurance.";
   }
@@ -87,7 +87,7 @@ function earnings() {
       let takeHomeMonthly = (gross-totalTax)/12;
 
       document.getElementById("result").innerHTML =
-      "Your gross pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
+      "Your gross annual pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
           +"<br>Your take home pay for the year is <strong>£" +thous(yearlyGrossMinusTax.toFixed(2))+ "</strong>, which works out at <strong>£" +thous(takeHomeMonthly.toFixed(2))+ "</strong> per month. "
           +"<br>This means that over the year you will pay <strong>£"+thous(totalIT)+"</strong> in income tax, and <strong>£" +thous(totalNI) +"</strong> in National Insurance." 
       ;
@@ -105,7 +105,7 @@ function earnings() {
       let takeHomeMonthly = (gross-totalTax)/12;
 
       document.getElementById("result").innerHTML = 
-      "Your gross pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
+      "Your gross annual pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
           +"<br>Your take home pay for the year is <strong>£" +thous(yearlyGrossMinusTax.toFixed(2))+ "</strong>, which works out at <strong>£" +thous(takeHomeMonthly.toFixed(2))+ "</strong> per month. "
           +"<br>This means that over the year you will pay <strong>£"+thous(totalIT)+"</strong> in income tax, and <strong>£" +thous(totalNI) +"</strong> in National Insurance." 
       ;
@@ -125,7 +125,7 @@ function earnings() {
       let yearlyGrossMinusTax = gross-totalTax;
       let takeHomeMonthly = (gross-totalTax)/12;
 
-      document.getElementById("result").innerHTML = "Your gross pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
+      document.getElementById("result").innerHTML = "Your gross annual pay (in other words, pay before tax) is <strong>£"+thous(gross.toFixed(2))+"</strong>."
           +"<br>Your take home pay for the year is <strong>£" +thous(yearlyGrossMinusTax.toFixed(2))+ "</strong>, which works out at <strong>£" +thous(takeHomeMonthly.toFixed(2))+ "</strong> per month. "
           +"<br>This means that over the year you will pay <strong>£"+thous(totalIT)+"</strong> in income tax, and <strong>£" +thous(totalNI) +"</strong> in National Insurance." 
       ;
