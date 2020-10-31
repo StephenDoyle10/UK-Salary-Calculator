@@ -5,6 +5,7 @@
 
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap.css">
   <link href="style.css" type="text/css" rel="stylesheet">
   
   
@@ -16,16 +17,18 @@
   
       
   
-  
-
+<div class="container">
+   
+<div class="col-lg-8 col-md-10 mx-auto">
   <div class = 'method'>
     <form id="salCalc">
+      <div class="title">
       <h1>UK Salary Calculator 2020-2021</h1>
-      <img src ="pennybags.png" style="width:50%;">
+    </div>
+      <img src ="pennybags.png" id="pennybags">
+      <div class="inputrequest">
       <p>Please enter your annual salary (before tax):<input type="number" name="name1" maxlength="50"></p>
-       <!-- <br>
-       Hours worked per day (not including unpaid lunch breaks):<input type="number" name="name2" maxlength="50"><br>
-        tbc 3rd input: <input type="number" name="name3" maxlength="50"></p>-->
+      </div>
      
       
         <button class="button" id="submit" type="submit" name="submit" value="=" onclick="earnings()">
@@ -34,6 +37,9 @@
     
     <p id="result"><br></p>
   </div>
+
+</div>
+</div>
 
 <script type="text/javascript" src="script.js"></script>
 
