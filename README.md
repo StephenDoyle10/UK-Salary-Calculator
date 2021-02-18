@@ -1,4 +1,4 @@
-The project can be viewed online here: https://stephendoyle10.github.io/uksalarycalculator/
+The project can be viewed online here: https://stephendoyle10.github.io/UK-Salary-Calculator/
 
 This project uses an algorithm that takes a user's annual gross salary as an input, and outputs:
     1. the user's annual pay after all tax deductions
