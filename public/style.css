@@ -1,0 +1,74 @@
+body {font-family: Optima, sans-serif;
+	font-size:16px;
+	color: black;
+    background: #55CDFC;
+    color:#003c9c;
+    line-height: normal;
+	
+}
+
+h1{
+		font-size:25px;
+		text-align: center;
+	}
+img{
+	max-width:100%;
+}
+
+p{font-size:16px}
+
+input{
+	width: 100px;
+height: 25px;
+text-align: left;
+font-size: 16px;
+border: solid 2px #F7A8B8;
+	
+	border-radius: 5px;
+	margin: 5px;
+}
+
+
+.title{
+	padding:0px 0px 20px 0px;
+}
+.method{
+	background: #F7A8B8;
+  border: 5px solid white;
+ padding:10px;
+ margin:0;
+ text-align: justify;
+  border-radius: 10px;
+  
+}
+.inputrequest{
+	padding: 20px 0px 0px 0px;
+}
+.button{
+	display:block;
+	font-size:16px;
+	border-radius: 5px;
+	height: 30px;
+	margin:auto;
+	margin:10px auto 10px auto;
+
+	
+}
+
+#pennybags{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+@media (min-width:800px){
+	img{
+		max-width:50%;
+	}
+	h1{
+		font-size:30px;
+	}
+	
+}
+
+/* #55CDFC =blue, #F7A8B8 = pink, #ffffff = white */
