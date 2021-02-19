@@ -22,3 +22,6 @@ Regarding National Insurance contributions, the algorithm had to account for the
     1. employees only start to pay National Insurance contributions if they earn more than £183 a week
     2. they pay 12% of their earnings above this limit and up to £962 a week
     3. the rate drops to 2% of their earnings over £962 a week.
+
+
+Update: a recent addition to this web app is Mocha testing, to test that the algorithm and the web site works for several different use cases.
