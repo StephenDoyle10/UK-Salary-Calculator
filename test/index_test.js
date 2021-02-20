@@ -6,29 +6,25 @@ describe("thous", () => {
     const result = thous(1000);
     const expected = "1,000";
 
-    assert.strictEqual(result,expected);
+    assert.strictEqual(result, expected);
   });
 });
 
-describe("earnings -£1000", () => {
+describe("earnings", () => {
   it("convert an annual salary of -1000 into a string that shows how such a salary is broken into different taxes", () => {
     const result = earnings(-1000);
     const expected = "Error. Illegible amount entered.";
 
     assert.ok(result === expected);
   });
-});
 
-describe("earnings £0", () => {
   it("convert an annual salary of £0 into a string that shows how such a salary is broken into different taxes", () => {
     const result = earnings(0);
     const expected = "Error. Illegible amount entered.";
 
     assert.ok(result === expected);
   });
-});
 
-describe("earnings £10,000", () => {
   it("convert an annual salary of £10,000 into a string that shows how such a salary is broken into different taxes", () => {
     const result = earnings(10000);
     const expected =
@@ -36,9 +32,7 @@ describe("earnings £10,000", () => {
 
     assert.ok(result === expected);
   });
-});
 
-describe("earnings £25,000", () => {
   it("convert an annual salary of £25,000 into a string that shows how such a salary is broken into different taxes", () => {
     const result = earnings(25000);
     const expected =
@@ -46,9 +40,7 @@ describe("earnings £25,000", () => {
 
     assert.ok(result === expected);
   });
-});
 
-describe("earnings £50,000", () => {
   it("convert an annual salary of £50,000 into a string that shows how such a salary is broken into different taxes", () => {
     const result = earnings(50000);
     const expected =
@@ -56,9 +48,7 @@ describe("earnings £50,000", () => {
 
     assert.ok(result === expected);
   });
-});
 
-describe("earnings £75,000", () => {
   it("convert an annual salary of £75,000 into a string that shows how such a salary is broken into different taxes", () => {
     const result = earnings(75000);
     const expected =
@@ -66,9 +56,7 @@ describe("earnings £75,000", () => {
 
     assert.ok(result === expected);
   });
-});
 
-describe("earnings £100,000", () => {
   it("convert an annual salary of £100,000 into a string that shows how such a salary is broken into different taxes", () => {
     const result = earnings(100000);
     const expected =
@@ -76,9 +64,7 @@ describe("earnings £100,000", () => {
 
     assert.ok(result === expected);
   });
-});
 
-describe("earnings £150,000", () => {
   it("convert an annual salary of £150,000 into a string that shows how such a salary is broken into different taxes", () => {
     const result = earnings(150000);
     const expected =
@@ -86,9 +72,7 @@ describe("earnings £150,000", () => {
 
     assert.ok(result === expected);
   });
-});
 
-describe("earnings £200,000", () => {
   it("convert an annual salary of £200,000 into a string that shows how such a salary is broken into different taxes", () => {
     const result = earnings(200000);
     const expected =
@@ -96,9 +80,7 @@ describe("earnings £200,000", () => {
 
     assert.ok(result === expected);
   });
-});
-
-describe("earnings £500,000", () => {
+  
   it("convert an annual salary of £500,000 into a string that shows how such a salary is broken into different taxes", () => {
     const result = earnings(500000);
     const expected =
