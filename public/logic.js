@@ -1,5 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+//To compile ts file to js file, in terminal: tsc logic.ts
+exports.__esModule = true;
 exports.earnings = exports.thous = void 0;
 //function to make sure numbers display as units of money, with commas in the right place, ie 100000 displays as £100,000 and not £100000
 function thous(num) {
@@ -10,7 +11,7 @@ function thous(num) {
 exports.thous = thous;
 ;
 function earnings(gross) {
-    var outputTotal = function (totalIT, totalNI) {
+    var fullSummary = function (totalIT, totalNI) {
         var totalTax = totalNI + totalIT;
         var yearlyGrossMinusTax = gross - totalTax;
         var takeHomeMonthly = (gross - totalTax) / 12;
@@ -30,18 +31,18 @@ function earnings(gross) {
         if (gross <= 9500) {
             var totalNI = 0;
             var totalIT = 0;
-            return outputTotal(totalIT, totalNI);
+            return fullSummary(totalIT, totalNI);
         }
         else {
             var totalNI = (gross - 9500) * 0.12;
             var totalIT = 0;
-            return outputTotal(totalIT, totalNI);
+            return fullSummary(totalIT, totalNI);
         }
     }
     else if (gross > 12500 && gross <= 50000) {
         var totalNI = (gross - 9500) * 0.12;
         var totalIT = (gross - 12500) * 0.2;
-        return outputTotal(totalIT, totalNI);
+        return fullSummary(totalIT, totalNI);
     }
     else if (gross > 50000 && gross <= 100001) {
         var niTaxBand1 = 4860;
@@ -50,7 +51,7 @@ function earnings(gross) {
         var incomeTaxBand1 = 7500;
         var incomeTaxBand2 = (gross - 50000) * 0.4;
         var totalIT = incomeTaxBand1 + incomeTaxBand2;
-        return outputTotal(totalIT, totalNI);
+        return fullSummary(totalIT, totalNI);
     }
     else if (gross > 100001 && gross <= 125000) {
         var personalAllowance = 12500 - (gross - 100000) / 2;
@@ -61,7 +62,7 @@ function earnings(gross) {
         var niTaxBand1 = 4860;
         var niTaxBand2 = (gross - 50000) * 0.02;
         var totalNI = niTaxBand1 + niTaxBand2;
-        return outputTotal(totalIT, totalNI);
+        return fullSummary(totalIT, totalNI);
     }
     else if (gross > 125000 && gross <= 150000) {
         var niTaxBand1 = 4860;
@@ -70,7 +71,7 @@ function earnings(gross) {
         var incomeTaxBand1 = 7500;
         var incomeTaxBand2 = (gross - 37500) * 0.4;
         var totalIT = incomeTaxBand1 + incomeTaxBand2;
-        return outputTotal(totalIT, totalNI);
+        return fullSummary(totalIT, totalNI);
     }
     else if (gross > 150000) {
         var niTaxBand1 = 4860;
@@ -80,7 +81,7 @@ function earnings(gross) {
         var incomeTaxBand2 = 45000;
         var incomeTaxBand3 = (gross - 150000) * 0.45;
         var totalIT = incomeTaxBand1 + incomeTaxBand2 + incomeTaxBand3;
-        return outputTotal(totalIT, totalNI);
+        return fullSummary(totalIT, totalNI);
     }
     else {
         return "Error. Illegible amount entered.";
@@ -89,8 +90,6 @@ function earnings(gross) {
 exports.earnings = earnings;
 function htmlEarnings() {
     var gross = parseInt(document.getElementById("userInput").value);
-    event.preventDefault();
+    window.event.preventDefault();
     document.getElementById("result").innerHTML = earnings(gross);
 }
-/* exports.thous = thous;
-exports.earnings = earnings; */
